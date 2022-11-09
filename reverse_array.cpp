@@ -25,7 +25,8 @@ int main() {
 	}
 	return 0;
 }
-Iterative C++ program to reverse an array
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
