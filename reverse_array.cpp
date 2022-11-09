@@ -1,18 +1,64 @@
-void main () {
-cout << "Let's Start"
+#include <iostream>
+using namespace std;
+
+void reverse (int arr[], int N) {
+    int start = 0;
+    int end = N-1;
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++; end--;
+    }
 }
-void main () {
-cout << "Let's Start"
+
+int main() {
+	int N;
+	cin >> N;
+	int A[N];
+	for (int i = 0; i < N; i++) {
+	    cin >> A[i];
+	}
+	reverse(A,N);
+	for (int i = 0; i < N; i++) {
+	    cout << A[i] << " ";
+	}
+	return 0;
 }
-void main () {
-cout << "Let's Start"
+Iterative C++ program to reverse an array
+#include <bits/stdc++.h>
+using namespace std;
+
+void rvereseArray(int arr[], int start, int end)
+{
+	while (start < end)
+	{
+		int temp = arr[start];
+		arr[start] = arr[end];
+		arr[end] = temp;
+		start++;
+		end--;
+	}
+}	
+
+void printArray(int arr[], int size)
+{
+for (int i = 0; i < size; i++)
+cout << arr[i] << " ";
+
+cout << endl;
 }
-void main () {
-cout << "Let's Start"
-}
-void main () {
-cout << "Let's Start"
-}
-void main () {
-cout << "Let's Start"
+
+int main()
+{
+    int n; cin >> n;
+	int arr[n];
+	for (int i = 0; i < n; i++) {
+	    cin >> arr[i];
+	}
+
+	rvereseArray(arr, 0, n-1);
+	printArray(arr, n);
+	
+	return 0;
 }
