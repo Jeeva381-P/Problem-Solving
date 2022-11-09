@@ -60,6 +60,4 @@ int main()
 
 	rvereseArray(arr, 0, n-1);
 	printArray(arr, n);
-	
-	return 0;
 }
